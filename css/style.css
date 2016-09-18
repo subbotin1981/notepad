@@ -1,0 +1,29 @@
+body{
+	color: #727272;
+	background: #efefef;
+}
+h2{
+	border-bottom: 1px dashed #ccc;
+}
+/* классы */
+.red{color: red;}
+.green{color: green;}
+.blue{color: blue;}
+.black{color:black;}
+.orange{color: orange;}
+.yellow{color: yellow;}
+
+/* Идентификатор */
+#red{color: red;}
+#green{color: green;}
+#blue{color: blue;}
+#black{color:black;}
+#orange{color: orange;}
+.yellow{color: yellow;}
+
+/* Селекторы атрибутов */
+
+[width]{border-color: red;}
+[width="700"]{border-color: green;}
+[title="fazan"]{color: purple;}
+[title="И чего он такого желает???"]{color: yellow;}
