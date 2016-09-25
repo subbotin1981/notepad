@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/les.css">
+	<title>Третья неделя</title>
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	
+	<header>
+		<div class="header">
+			<div class="mid">
+					<img src="img/logo_q.jpg" class="logo" alt="logo">
+				<div class="icons">
+					<a href="https://www.facebook.com/subbotin1981" target="_blank"><img src="img/icons/facebook.png" alt=""></a>
+					<a href="https://vk.com/subbotin1981" target="_blank"><img src="img/icons/vkontakte.png" alt=""></a>
+					<a href="https://www.instagram.com/subbotin1981/" target="_blank"><img src="img/icons/instagram.png" alt=""></a>
+					<a href="https://twitter.com/SubbotinAlexey" target="_blank"><img src="img/icons/twitter.png" alt=""></a>
+					<a href="https://plus.google.com/u/0/+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9%D0%A1%D1%83%D0%B1%D0%B1%D0%BE%D1%82%D0%B8%D0%BD" target="_blank"><img src="img/icons/google_alt.png" alt=""></a>
+					<a href="https://www.youtube.com/channel/UCg_9xtVg8Zyj49KGY5z4HyA" target="_blank"><img src="img/icons/youtube.png" alt=""></a>
+				</div>
+				<div class="name">Онлайн-дневник Субботина Алексея!</div>
+				<div class="description">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div>
+			<div class="clear"></div>
+
+			</div>
+		</div>	
+	</header>
+	
+	<nav>
+		<div class="main_menu">
+			<div class="mid">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Об авторе</a></li>
+					<li><a href="#">Полезные ресурсы</a></li>
+					<li><a href="#">Связаться со мной</a></li>
+					<div class="clear"></div>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="main">
+			<div class="sidebar">
+				<div class="widget">
+					<ul>
+						<li><a href="week1.html"> Неделя 1 - Ясли </a></li>
+						<li><a href="week2.html"> Неделя 2 - Детский сад</a></li>
+						<li><a href="week3.html"> Неделя 3 - Первый класс </a></li>
+						<li><a href="week4.html"> Неделя 4 - Средняя школа </a></li>
+						<li><a href="week5.html"> Неделя 5 - Старший класс </a></li>
+						<li><a href="week6.html"> Неделя 6 - Выпускники</a></li>
+						<li><a href="week7.html" class="noborder"> Неделя 7 - Реформаторы</a></li>
+					</ul>
+				</div>
+
+				<div class="widget">
+					<ul>
+						<li><a href="#d1"> День 1 - Структура сайта на HTML5.</a></li>
+						<li><a href="#d2"> День 2 - Типа верстальщик:)</a></li>
+						<li><a href="#d3"> День 3 - Дадим по шапке!</a></li>
+						<li><a href="#d4"> День 4 - Меню и списки.</a></li>
+						<li><a href="#d5"> День 5 - Псевдоклассы.</a></li>				
+					</ul>
+				</div>
+			</div>
+		<div class="content">
+			<article>
+				<header>
+					<h1>Неделя 3 - Первый класс</h1>
+				</header>
+				<section>
+					<div class="day">
+						<h2 id="d1"> День 1. Структура сайта на HTML5</h2>
+						<h3>Семантические теги:</h3>
+							<p> Тут должно быть описание тегов, но картинки достаточно:)</p>
+							<p> <img src="img/struct.png" alt="Принципиальная схема HTML5" width="300"> </p>
+						<h3>Семантические теги</h3>
+							<p><span class="tag">&lt;header&gt;</span> - задает «шапку» сайта или раздела, в которой обычно располагается заголовок.</p>
+							<p><span class="tag">&lt;nav&gt;</span> - задает навигацию по сайту. Если на странице несколько блоков ссылок, то в него обычно помещают приоритетные ссылки. Также допустимо использовать несколько тегов &lt;nav&gt; в документе. Запрещается вкладывать &lt;nav&gt; внутрь &lt;address&gt;.</p>
+							<p><span class="tag">&lt;article&gt;</span> - задает содержание сайта вроде новости, статьи, записи блога, форума или др.</p>
+							<p><span class="tag">&lt;section&gt;</span> - Задаёт раздел документа, может применяться для блока новостей, контактной информации, глав текста, вкладок в диалоговом окне и др. Раздел обычно содержит заголовок. Допускается вкладывать один тег внутрь другого</p>
+							<p><span class="tag">&lt;hgroup&gt;</span> - Используется для группирования заголовков веб-страницы или раздела. Внутри располагаются теги заголовков от h1 до h6. Данный тег исключён из версии HTML от W3C, но остался в версии WHATWG, будущее элемента пока не определено.</p>
+							<p><span class="tag">&lt;aside&gt;</span> - Определяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации. Такой блок, как правило, называется «сайдбар» или «боковая панель».</p>
+							<p><span class="tag">&lt;footer&gt;</span> - задаёт «подвал» сайта или раздела, в нём может располагаться имя автора, дата документа, контактная и правовая информация.</p>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d2">День 2. Типа верстальщик:)</h2>
+							<p>Для задания структуры дневника мы использовали 5 блоков - для шапки, главного меню, контента с сайдбаром и подвала. И еще 2 блока чтобы отцентрировать содержимое сайта.</p>
+						<h3>Работа с фоном</h3>
+							<p>Свойство <span class="style">background</span> - это свойство отвечает за фон элемента, к которому оно прописывается через стили. В качестве фона мы можем использовать различные цвета, градиенты, картинки.</p>
+							<p><b>Синтаксис:</b></p>
+							<p><span class="style">body {background: url(путь к картинке);}</span> - указываем картинку </p>
+							<p><span class="style">body {background: цвет;}</span> - указываем цвет. </p>
+							<p><span class="style">body {background: цвет url(путь к картинке);}</span> - указываем цвет и путь к картинке. </p>
+					</div>
+				</section>
+				<section>
+					<div class="day">
+						<h2 id="d3">День 3. Дадим по шапке!</h2>
+						
+						<p>По умолчанию браузер задает свои отступы и поля для элементов сайта. В том числе и для элемента <span class="tag">&lt;body&gt;</span> И чтобы эти отступы пропали необходимо использовать сброс или нормализацию стилей. Или прописывать все в ручную.</p>
+						<p>Обычно отступы дочерних элементов вылезают за пределы родителей и становятся их отступами. Лечить можно прописав обтекание, либо задав родителю свойство <span class="style">родитель (padding:1px;)</span></p>
+						
+						<h3>Работа со шрифтами</h3>
+						<p>Свойство <span class="style">font</span> - это свойство отвечает за указание шрифта, и имеет множество вариаций.</p>
+						<p><b>Синтаксис:</b></p>
+						<p><span class="style">font: 16px/24px Arial, Tahoma, "Trebushet MS", sans-serif;</span> </p>
+						<p>Так же мы можем указать шрифты которые будут загружаться из интернета.</p>
+						<p>Свойство <span class="style">font-family: Cuprum;</span> указывает только имя и семейство шрифта. </p>
+						
+						<h3>Семейство шрифтов.</h3>
+						<p><b>sans-serif</b> - шрифты без засечек (рубленые), лучше использовать на мониторах</p>
+						<p><b>serif</b> - шрифты с засечками, лучше использовать в книгах</p>
+						<p><b>monospace</b> - моноширные шрифты, ширина у каждого символа одинаковая</p>
+						<p><b>cursive</b> курсивные шрифты</p>
+						<p><b>fantasy</b> декоративные шрифты</p>
+
+
+						<p>Свойство <span class="style">font-size: 30px;</span> задает размер шрифтов. </p>
+						<p>Свойство <span class="style">line-height: 30px;</span> задает высоту строки. </p>
+
+					</div>
+				</section>
+
+				<section>
+					<div class="day">
+						<h2 id="d4">День 4. Меню и списки.</h2>
+						<p>Есть специальное свойство для работы со списками - <span class="style">list-style</span>. При помощи него мы можем указать вид маркеров, способ отображения и картинку. </p>
+						<h3>Маркеры в списках:</h3>
+						<p>Для задания маркеров мы можем использовать подсвойство <span class="style">list-style-type</span></p>
+						<p><b>Маркерованный список:</b></p>
+						<ul>
+							<li style="list-style:circle;"><b>circle</b> - маркер как круг</li>
+							<li><b>disc</b> - маркер как черная точка</li>
+							<li style="list-style:square;"><b>square</b> - маркер как квадрат</li>
+						</ul>
+						<p><b>Нумерованный список:</b></p>
+							<ol>
+								<li><b>decimal</b> - арабские числа</li>
+								<li style="list-style-type:armenian;"><b>armenian</b> - армянские числа</li>
+								<li style="list-style:georgian;"><b>georgian</b> - грузинские цифры</li>
+								<li style="list-style-type:lower-roman;"><b>lower-roman</b> - римские цифры в нижнем регистре</li>
+								<li style="list-style:upper-roman;"><b>upper-roman</b> - римские цифры большие</li>
+								<li style="list-style-type:lower-latin;"><b>lower-latin</b> - латинские буквы цифры в нижнем регистре</li>
+								<li style="list-style:upper-latin;"><b>upper-latin</b> - латинские буквы большие</li>
+								<li style="list-style:none;"><b>none</b> - отменяет маркеры</li>
+							</ol>
+						<p>Для задания позиции маркера мы можем использовать подсвойство <span class="style">list-style-position</span></p>
+						<p>Для задания маркера как картинки мы можем использовать <span class="style">list-style-image</span></p>
+
+						<p><b>Примеры позиционирования и маркеров-картинок:</b></p>
+							<ul>
+								<li style="list-style:inside url(img/accept.png);"><b>inside</b> - это значение указывает что маркер будет использоваться внутри списка и будет являться частью текста.</li>
+								<li style="list-style-image: url(img/accept.png);"><b>outside</b> - это значение указывает что маркер будет использоваться снаружи нашего списка и не будет являться частью нашего текста.</li>
+							</ul>
+					</div>
+				</section>
+
+				<section>
+					<div class="day">
+						<h2 id="d5">День 5. Псевдоклассы.</h2>
+						<p>При помощи псевдоклассов мы можем влиять на стили при помощи действий пользователя. Задаются через двоеточие</p>
+						<h3>Какие они бывают:</h3>
+						<p><b>hover</b> - указывает на стили во время наведения курсора мыши на элемент</p>
+						<p><b>link</b> - указывает на стили для не посещенных стилей</p>
+						<p><b>visited</b> - указывает на стили для уже посещенных ссылок.</p>
+						<p><b>active</b> - указывает на стили для активного элемента. Активным элементом (ссылкой) считается элемент на момент клика мышкой </p>
+
+						<div class="important">
+						<p><b>Важно:</b>для того чтобы псевдоклассы работали нормальнго, надо сначало указывать стили visited,  потом для hover, и в конце для active</p>
+						</div>
+						<p class="a">Псевдоклассы hover и  active можно применить к любому элементу</p>
+
+
+						<p><b>first-child</b> - указывают стили для первого тега в своем родителе.</p>
+						<p>
+							<i>Первый</i>
+							<i>Второй</i>
+							<i>Третий</i>
+						</p>
+						<p>
+							<b>Четвертый</b>
+							<i>Пятый</i>
+							<i>Шестой</i>
+						</p>
+						<p>
+							<i>Седьмой</i>
+							<i>Восьмой</i>
+							<i>Девятый</i>
+						</p>
+					</div>
+				</section>
+			</article>
+		</div>
+	</div>
+
+
+
+<footer>
+		<div class="footer">
+			<div class="mid">
+				<p> 2016 &copy; Субботин Алексей </p>
+			</div>
+		</div>
+</footer>		
+
+
+</body>
+</html>

@@ -1,29 +1,165 @@
+@import 'https://fonts.googleapis.com/css?family=Cuprum';
+
+/* Теги */
 body{
-	color: #727272;
-	background: #efefef;
+	background: url('../img/fbody.png');
+	margin: 0;
+	padding: 0;
+	font: 16px/24px Arial, Tahoma, "Trebuchet MS", sans-serif;
+	color: #272727;
+}
+a{
+	color: #272727;
+
+}
+a:active{
+	color: red;
+}
+a:hover{
+	color: #027272;
+}
+h1,h2,h3{
+	font-family: 'Cuprum', sans-serif;
+	font-weight: normal;
+}
+h1{
+	color: #d8d8d8;
+	font-size: 30px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	line-height: 20px;
 }
 h2{
-	border-bottom: 1px dashed #ccc;
+	font-size: 24px;
+	background: #e8e8e8;
+	line-height: 20px;
+	padding: 18px 20px 18px 10px;
+	margin: -20px 0 0 -10px;
+	width: 100%;
 }
-/* классы */
-.red{color: red;}
-.green{color: green;}
-.blue{color: blue;}
-.black{color:black;}
-.orange{color: orange;}
-.yellow{color: yellow;}
+h3{
+	border-bottom: 1px dashed #555;
+	color: #555;
+	font-size: 20px;
+}
+/* Шапка сайта */
+.logo{
+	float: left;
+	margin-right: 20px;
+}
+.name, .description{
+	font-family: 'Cuprum', sans-serif;
+	color: #fff;
+	line-height: 30px;
+}
+.name{
+	font-size: 30px;
+	padding-top: 20px;
+}
+.description{
+	font-size: 18px;
+	float: left;
+}
+.icons{
+	float: right;
+	padding-top: 35px;
+}
+/* Главное меню */
+.main_menu ul{
+	margin: 0;
+	padding: 0;
+	font-family: 'Cuprum', sans-serif;
+	font-size: 20px;
 
-/* Идентификатор */
-#red{color: red;}
-#green{color: green;}
-#blue{color: blue;}
-#black{color:black;}
-#orange{color: orange;}
-.yellow{color: yellow;}
+}
+.main_menu ul li{
+	margin: 0;
+	padding: 0;
+	line-height: 50px;
+	float: left;
+	list-style: none;
+}
+.main_menu ul li a{
+	padding: 0 20px;
+}
+/* Структура сайта */
+.header{
+	background: url('../img/fhead.png');
+	padding: 5px 0;
+}
+.main_menu{
+	background: #e8e8e8;
+}
+.main{
+	margin: 40px auto;
+	width: 1000px;
+}
+.sidebar{
+	width: 31%;
+	float: right;
+}
+.widget{
+	background: #fff url('../img/fhead.png') repeat-y 300px 0 ;
+}
+.widget ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.widget ul li{
+	line-height: 18px;
+	font-size: 18px;
+	font-family: 'Cuprum', sans-serif;
+	background: #efefef;
+	margin: 0 10px 0 0;
+}
+.widget ul li a{
+	display: block;
+	line-height: 18px;
+	font-size: 18px;
+	padding: 16px 0 16px 40px;
+	border-bottom: 1px solid #999;
+	background: #efefef;
+}
+.widget ul li a:hover{
+		background: #ddd;
+}
+.widget ul li a.noborder{
+	border-bottom: none;
+}
 
-/* Селекторы атрибутов */
+.content{
+	width: 65%;
+}
+.footer{
+		font-size: 20px;
+		font-family: 'Cuprum', sans-serif;
+		background: #e8e8e8;
+		margin: 0;
+		padding-bottom: 1px;
+		line-height: 50px; 
+		padding-left: 15%;
+}
+.mid{
+	margin: 0 auto;
+	width: 1000px;
+}
+.day{
+	background: #fff url('../img/fhead.png') repeat-y -110px 0;
+	padding: 20px;
+	margin: 40px 0;
+}
 
-[width]{border-color: red;}
-[width="700"]{border-color: green;}
-[title="fazan"]{color: purple;}
-[title="И чего он такого желает???"]{color: yellow;}
+
+.tag{
+	color: #0d677d;
+	font-weight: bold;
+}
+.style{
+	color: #295717;
+	font-style: italic;
+}
+/* Доп стили */
+.clear{
+	clear: both;
+}
