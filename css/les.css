@@ -72,3 +72,60 @@ p.primer i+u+s{color: red;}
 
 /* Псевдокласс */
 i:first-child{color: purple;}
+
+
+form{
+	font-family: 'Cuprum', sans-serif;
+
+}
+form.forms{
+	background: #f5f5f5 url('../img/bg.png');
+	padding: 20px;
+	width: 400px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px solid #bbb;
+}
+form.forms label{
+	margin: 0 0 10px 0;
+	display: block;
+}
+form.forms span{
+	display: inline-block;
+	width: 175px;
+	cursor: pointer;
+	color: #555;
+	/* font-size: 15px; */
+	/* font-style: italic; */
+}
+form.forms input{
+	width: 150px;
+	padding: 6px 0 6px 10px;
+	line-height: 18px;
+	font-family: 'Cuprum', sans-serif;
+	height: 30px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+form.forms input:focus{
+	border: #75eb66 1px solid;
+	color: #1b6d9c;
+}
+form.forms input[type="reset"]{
+	width: 150px;
+	padding: 6px 0 6px 10px;
+	line-height: 18px;
+	font-family: 'Cuprum', sans-serif;
+	height: 30px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+form.forms textarea{
+	width: 97%;
+	height: 75px;
+	font-family: 'Cuprum', sans-serif;
+	padding-left:5px;
+}
+
+

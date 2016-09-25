@@ -163,3 +163,38 @@ h3{
 .clear{
 	clear: both;
 }
+.code{
+	background: #efefef url('../img/process.png') no-repeat 10px center;
+	border: 1px solid #bbb;
+	padding: 20px 20px 20px 50px;
+	font-family: monospace;
+	font-size: 14px;
+}
+.important{
+	background: #E7C10E url('../img/warning.png') no-repeat 10px center;
+	border: 1px solid #E8B51B ;
+	box-shadow: 2px 2px 4px 1px #444 ;
+	padding: 20px 20px 20px 50px;
+	font-family: monospace;
+	font-size: 14px;
+}
+.fishka{
+	background: #618DF1 url('../img/star_full.png') no-repeat 10px center; 
+	border: #1F1BE8 solid 1px;
+	padding: 0 0 0 50px; margin: 20px; 
+	font-family:  monospace; 
+	font-size: 14px; 
+	box-shadow: 8px 10px 25px 4px #5D7A93 ;
+}
+.help{
+	background: #4DE84D url('../img/help.png') no-repeat 10px center; 
+	border: green solid 1px; 
+	padding: 0 0 0 50px; 
+	margin: 20px; 
+	font-family:  monospace; 
+	font-size: 14px; 
+	box-shadow: 5px 5px 15px 2px #444 ;
+}
+.mistake{
+	color: red;
+}

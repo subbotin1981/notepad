@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/les.css">
+	<title>Пятая неделя</title>
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<header>
+		<div class="header">
+			<div class="mid">
+					<img src="img/logo_q.jpg" class="logo" alt="logo">
+				<div class="icons">
+					<a href="https://www.facebook.com/subbotin1981" target="_blank"><img src="img/icons/facebook.png" alt=""></a>
+					<a href="https://vk.com/subbotin1981" target="_blank"><img src="img/icons/vkontakte.png" alt=""></a>
+					<a href="https://www.instagram.com/subbotin1981/" target="_blank"><img src="img/icons/instagram.png" alt=""></a>
+					<a href="https://twitter.com/SubbotinAlexey" target="_blank"><img src="img/icons/twitter.png" alt=""></a>
+					<a href="https://plus.google.com/u/0/+%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9%D0%A1%D1%83%D0%B1%D0%B1%D0%BE%D1%82%D0%B8%D0%BD" target="_blank"><img src="img/icons/google_alt.png" alt=""></a>
+					<a href="https://www.youtube.com/channel/UCg_9xtVg8Zyj49KGY5z4HyA" target="_blank"><img src="img/icons/youtube.png" alt=""></a>
+				</div>
+				<div class="name">Онлайн-дневник Субботина Алексея!</div>
+				<div class="description">Здесь содержатся заметки, созданные в ходе обучения на тренинге.</div>
+			<div class="clear"></div>
+
+			</div>
+		</div>	
+	</header>
+	
+	<nav>
+		<div class="main_menu">
+			<div class="mid">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Об авторе</a></li>
+					<li><a href="#">Полезные ресурсы</a></li>
+					<li><a href="mail.html">Связаться со мной</a></li>
+					<div class="clear"></div>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="main">
+			<div class="sidebar">
+				<div class="widget">
+					<ul>
+						<li><a href="week1.html"> Неделя 1 - Ясли </a></li>
+						<li><a href="week2.html"> Неделя 2 - Детский сад</a></li>
+						<li><a href="week3.html"> Неделя 3 - Первый класс </a></li>
+						<li><a href="week4.html"> Неделя 4 - Средняя школа </a></li>
+						<li><a href="week5.html"> Неделя 5 - Старший класс </a></li>
+						<li><a href="week6.html"> Неделя 6 - Выпускники</a></li>
+						<li><a href="week7.html" class="noborder"> Неделя 7 - Реформаторы</a></li>
+					</ul>
+				</div>
+					<br>
+				<div class="widget">
+					<ul>
+						<li><a href="#d1"> День 1 - Атрибуты тега input.</a></li>
+						<li><a href="#d2"> День 2 - Элементы форм.</a></li>
+						<li><a href="#d3"> День 3 - Форма.</a></li>
+						<li><a href="#d4"> День 4 - Отправка писем.</a></li>
+						<li><a href="#d5"> День 5 - Семантические элементы HTML5.</a></li>				
+					</ul>
+				</div>
+			</div>
+		<div class="content">
+			<article>
+				<header>
+					<h1>Неделя 5 - Формы. </h1>
+				</header>
+
+				<section>
+					<div class="day">
+						<h2 id="d1"> День 1. Атрибуты тега input.</h2>
+						<p>При помощи дополнительных атрибутов, мы можемболее конкретно настраивать поля наших форм.</p>
+						<h3>Атрибуты тега input</h3>
+						<ul>
+							<li><i>required</i> - делает поле обязательным для заполнения</li>
+							<li><i>placeholder</i> -текст поля который исчезает при фокусе.</li>
+							<li><i>autocomplete</i> - автозаполнение поля.</li>
+							<li><i>pattern</i> - задает формат ввода данных для поля.</li>
+							<li><i>min</i> - задает минримальное значение для поля</li>
+							<li><i>max</i> - задает максимальное значение</li>
+							<li><i>multiple</i> - разрешает указать несколько почтовых адресов (через запятую) или файлов для загрузки</li>
+							<li><i>step</i> - задает шаги актуален для полей числовых и ползунка</li>
+							<li><i>autofocus</i> - задает автоматический фокус для указанного поля</li>
+							<li><i>form</i> - привязывает поле к определенной форме.</li>
+							<li><i>list</i> - используется для привязки к тегу <span class="tag">&lt;datalist&gt;</span> что бы указать на список вариантов </li>
+						</ul>
+
+						<h3>Пример формы:</h3>
+						<p>Это та же самая форма из недели 4 но она дополнительно имеет настройки для своих полей.</p>
+						<form id="test">
+							<p><b>Форма для заказа киллера</b></p>
+							<span>*Укажите имя:</span> 
+							<input type="text" name="name" placeholder="Укажите свое имя"  required > <br>
+							<span>* Укажите почту:</span> 
+							<input type="email" name="e-mail" placeholder="Укажите свой email" required multiple> <br>
+							<span>Выберите дату:</span> 
+							<input type="date" name="date" > <br>
+							<span>Сколько лет?:</span> 
+							<input type="number" name="number" placeholder="Укажите свой возраст" min="18" max="250" step="10"> <br>
+							<input type="range" name="range" min="18" max="250" step="100"> <br>
+							<span>Ваш контакт:</span> 
+							<input type="url" name="url" placeholder="Введите url странички"> <br>
+							<span>Ваш телефон:</span> 
+							<input type="tel" name="tel" placeholder="1111-1111111" pattern="[0-9]{5}-[0-9]{7}"> <br>
+							<span>Где искать?:</span> 
+							<input type="search" name="search" placeholder="Укажите город"> <br>
+							<span>Выберите цвет глаз:</span> 
+							<input type="color" name="color" > <br>
+							<input type="submit" name="btn" value="push me gentle">
+						</form>
+					</div>
+				</section>
+				
+				<section>
+					<div class="day">
+						<h2 id="d2">День 2. Элементы форм. </h2>
+							<p><span class="tag">&lt;label&gt;</span> - этот тег связывает текст и поле формы тоесть при клике на нексте активируется поле.</p>
+						<p>Связываться можно двумя способами. <br>
+						 1. Разместить все внутри тега <span class="tag">&lt;lable&gt;</span>. <br>
+						 2. При помощи специального атрибта и идентификатора.</p>
+						<p><span class="tag">&lt;select&gt;</span> - задает список в котором можно выбрать определенные значения. Значения (пункты списка задаются при помощи тега <span class="tag">&lt;option&gt;</span>)</p>
+						<p><span class="tag">&lt;optgroup&gt;</span> - обьединяет пункты списков в отдельные группы</p>
+						<p><span class="tag">&lt;output&gt;</span> - через этот тег можно вывести результат поля формы или его дополнительно обработать при выводе.</p>
+						<p><span class="tag">&lt;datalist&gt;</span> - создает список вариантов для заполнения поля. Активируется данные список при фокусе на поле (двойной щелчок) либо при вводе информации.</p>
+						<p><span class="tag">&lt;textarea&gt;</span> - поле для ввода большого текста. Текст виден в несколько строк.</p>
+
+
+						<h3>Пример формы:</h3>
+						<form action="#">
+							<label>
+								Введите ваше имя:
+								<input list="names" type="text" name="name" placeholder="Укажите свое имя"  required >
+								<datalist id="names">
+									<option value="Антон"></option>
+									<option value="Андрей"></option>
+									<option value="Алексей" selected></option>
+									<option value="Егор"></option>
+									<option value="Евгений"></option>
+									<option value="Николай"></option>
+									<option value="Онуфрий"></option>
+									<option value="Кафка"></option>
+									<option value="Балбес"></option>
+								</datalist>
+							</label> <br>
+							
+							<label for="mail">
+								Введите ваш е-mail:</label>
+								<input id="mail" type="email" name="e-mail" placeholder="Укажите свой e-mail"  required > <br>
+
+							<label>
+								Укажите тему письма:
+								<select name="tema" >
+									<optgroup label="Вопросы по продуктам">
+										<option value="support">Поддержка автора</option>
+										<option value="sell" label="Покупка тренинга" >
+										</option>
+										<option value="oplata">Способы оплаты</option>
+									</optgroup>
+									<optgroup label="Вопросы по сайту" >
+										<option value="statia">Вопрос по статье</option>
+										<option value="other" selected>Другое</option>
+									</optgroup>
+								</select>
+							</label> <br>
+
+							<label oninput="rage.value=age.value; raged.value=age.value*365">
+								Укажите возраст:
+								<input type="range" name="age" min="13" max="120" step="1" value="18"> 
+								<br>
+
+								Вам <output name="rage"> 13		</output> лет или
+								<output name="raged">4745</output> дней.
+							</label><br>
+							<label>
+								Введите сообщение: <br>
+								<textarea wrap="off" name="comments" placeholder="Введите свой комментарий"></textarea>
+							</label>
+							<div class="important">
+								<p>При значении атрибута wrap равном hard - должен быть указан атрибут cols.</p>
+							</div>		
+						</form>
+					</div>
+				</section>
+				
+				<section>
+					<div class="day">
+						<h2 id="d3">День 3. Форма </h2>
+						<h3>Форма обратной связи</h3>
+						<form action="#" class="forms">
+							<div >
+								<p style="border-bottom: 1px dashed; color:#2A187A"> <b><i>Форма обратной связи</i></b></p>
+							</div>
+							<label>
+								<span>Введите ваше имя:</span>
+								<input type="text" name="name" placeholder="введите имя" required>
+							</label>
+							<label>
+								<span>Введите ваш e-mail:</span>
+								<input type="email" name="email" placeholder="введите email" required>
+							</label>
+							<label>
+								<span>Введите ваш телефон:</span>
+								<input type="tel" name="phone" placeholder="111-11-111-11-11" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+							</label>
+							<label>
+								<span>Напишите тему:</span>
+								<input type="text" name="theme" placeholder="введите тему" required>
+							</label>
+							<label>
+								<span>Оставьте сообщение:</span>
+								<textarea placeholder="введите сообщение" required></textarea>
+							</label>	
+
+							<label>	
+								<input type="reset" name="reset" value="Очистить форму" >	
+							</label>	
+
+							<label style="text-align:right;">									
+								<input type="submit" name="send" value="Отправить письмо">	
+							</label>
+
+						</form>
+					</div>
+				</section>
+
+				<section>
+					<div class="day">
+						<h2 id="d4">День 4. </h2>
+						
+					</div>
+				</section>
+				
+				<section>
+					<div class="day">
+						<h2 id="d5">День 5. </h2>
+						
+					</div>
+				</section>
+
+			</article>	
+		</div>
+	</div>
+
+
+<footer>
+		<div class="footer">
+			<div class="mid">
+				<p> 2016 &copy; Субботин Алексей </p>
+			</div>
+		</div>
+</footer>
+
+
+</body>
+</html>

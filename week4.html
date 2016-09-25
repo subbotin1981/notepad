@@ -37,10 +37,10 @@
 		<div class="main_menu">
 			<div class="mid">
 				<ul>
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Об авторе</a></li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">Об авторе</a></li>
 					<li><a href="#">Полезные ресурсы</a></li>
-					<li><a href="#">Связаться со мной</a></li>
+					<li><a href="mail.html">Связаться со мной</a></li>
 					<div class="clear"></div>
 
 				</ul>
@@ -61,14 +61,14 @@
 						<li><a href="week7.html" class="noborder"> Неделя 7 - Реформаторы</a></li>
 					</ul>
 				</div>
-
+				<br>
 				<div class="widget">
 					<ul>
 						<li><a href="#d1"> День 1 - Структура сайта на HTML5.</a></li>
-						<li><a href="#d2"> День 2 - Типа верстальщик:)</a></li>
-						<li><a href="#d3"> День 3 - Дадим по шапке!</a></li>
-						<li><a href="#d4"> День 4 - Меню и списки.</a></li>
-						<li><a href="#d5"> День 5 - Псевдоклассы.</a></li>				
+						<li><a href="#d2"> День 2 - Аудиоплеер.</a></li>
+						<li><a href="#d3"> День 3 - Видеопроигрыватель. </a></li>
+						<li><a href="#d4"> День 4 - Формы. </a></li>
+						<li><a href="#d5"> День 5 - Тег input. </a></li>				
 					</ul>
 				</div>
 			</div>
@@ -77,26 +77,247 @@
 				<header>
 					<h1>Неделя 4 - Средняя школа </h1>
 				</header>
+
 				<section>
 					<div class="day">
-						<h2 id="d1">День 1</h2>
+						<h2 id="d1">День 1. Подсказки.</h2>
+								<p>Блок с кодом</p>
+								<div class="code">
+									&lt;!DOCTYPE html&gt;<br>
+										&lt;html lang="en"&gt; <br>
+										&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+										&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+										&lt;link rel="stylesheet" href="css/style.css"&gt; <br>
+								</div>
+
+								<p class="otstup">Блок важно:</p>
+									<div class="important">
+										<p>какой то текст с пометкой <b>Важно</b></p>
+									</div>
+
+								<p class="otstup">Блок Фишка:</p>
+									<div class="fishka">
+										<p>какой то текст с пометкой <b>Фишка</b></p>
+									</div>
+
+								<p class="otstup">Блок вопрос:</p>
+									<div class="help">
+										<p>какой то текст с  <b>вопросом</b></p>
+								</div>
 					</div>
+				</section>
+				
+				<section>
 					<div class="day">
-						<h2 id="d2">День 2</h2>
+						<h2 id="d2">День 2. Музыкальный плеер на сайте.</h2>
+						<h3>Аудиоплеер</h3>
+							<p>Тег<span class="tag">&lt;audio&gt;</span> позволяет проигрывать музыкальные композиции на сайте. Путь к странице можно задать двумя способами. Через тег <span class="tag">&lt;source&gt;</span>, либо через атрибут src.</p>
+							<div class="code">
+								&lt;audio src='путь к аудио'&gt;&lt;/audio&gt;<br>
+								&lt;audio&gt;&lt;source src='путь к аудио'&gt;&lt;/audio&gt;
+							</div>
+							<br>
+							<audio  controls loop preload="metadata">
+								<source src="media/intro.mp3" type="audio/mpeg">
+								<source src="media/intro.ogg" type='audio/ogg'>
+								<p class="mistake">К сожалению, ваш браузер слишком устарел и не поддерживает технологии HTML5 и CSS3. Вы не сможете послушать аудио но можете скачать его на компьютер: <a href="../media/intro.mp3"> скачать аудио </a></p>
+							</audio>
+								<p><b>Атрибуты музыкального проигрывателя:</b></p>
+								<p><b>controls</b> - указывает что необходимо отображать элементы контроля над плеером.</p>
+								<p><b>autoplay</b> - задает автоматическое воспроизведение файла</p>
+								<p><b>loop</b> - зацикливает воспроизведение файла</p>
+								<p><b>preload</b> - указывает браузеру как нужно подгружать мультимедиа на странице</p>
+							<ul>
+								<li><i>none</i> - не загружать файл</li>
+								<li><i>auto</i> - стоит по умолчанию, файлы загружаются вместе со страницей</li>
+								<li><i>metadata</i> -браузер подгружает только информацию о файле мультимедиа</li>
+							</ul>
 					</div>
+				</section>
+				
+				<section>
 					<div class="day">
-						<h2 id="d3">День 3</h2>
+						<h2 id="d3">День 3. Видеопроигрыватель на сайте</h2>
+						<h3>Видеопроигрыватель:</h3>
+							<p>Тег<span class="tag">&lt;video&gt;</span> позволяет проигрывать видео композиции на сайте. Путь к странице можно задать двумя способами. Через тег <span class="tag">&lt;source&gt;</span>, либо через атрибут src.</p>
+						<div class="code">
+							&lt;video src='путь к видео'&gt;&lt;/video&gt;<br>
+							&lt;video&gt;&lt;source src='путь к видео'&gt;&lt;/video&gt;
+						</div>
+							<p><b>Пример 1:</b></p>
+						<video src="media/clip.mp4" controls preload="metadata" height="315" width="560">
+							<p class="mistake">К сожалению, ваш браузер слишком устарел и не поддерживает технологии HTML5 и CSS3. Вы не сможете посмотреть видео но можете скачать его на компьютер: <a href="media/clip.mp4"> скачать видео </a></p>
+						</video>
+						<div class="code">
+							&lt;video src="media/clip.mp4" controls preload="metadata" height="315" width="560"'&gt;&lt;/video&gt;<br>
+						</div>
+							<br>
+							<p><b>Пример 2:</b></p>
+						<video  controls="controls" poster="media/poster.jpg" height="315" width="560" > 
+							<p class="mistake">К сожалению, ваш браузер слишком устарел и не поддерживает технологии HTML5 и CSS3. Вы не сможете посмотреть видео но можете скачать его на компьютер: <a href="media/clip.mp4"> скачать видео </a></p>
+						</video>
+						<div class="code">
+							&lt;video  controls="controls" poster="media/poster.jpg" height="315" width="560" &gt;&lt;/video&gt;
+						</div>
+						<p><b>Пример 3:</b></p>
+						
+						<video  controls preload="metadata" poster="media/poster.png" height="315" width="560" >
+							<source src="media/clip.mp4" media="screen" type="video/ogg">
+							<source src="media/clip.ogg" media="screen">
+							<p class="mistake">К сожалению, ваш браузер слишком устарел и не поддерживает технологии HTML5 и CSS3. Вы не сможете посмотреть видео но можете скачать его на компьютер: <a href="media/clip.mp4"> скачать видео </a></p>
+						</video>
+						<div class="code">
+							&lt;video  controls preload="metadata" poster="media/poster.jpg"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;source src="media/clip.mp4" media="screen" type="video/ogg"&gt;<br>
+							&nbsp;&nbsp;&nbsp;&lt;source src="media/clip.ogg" media="screen"&gt;<br>
+							&lt;/video&gt;
+						</div>
+
+							<p>Атрибуты, которые мы рассмотрели к аудиопроигрователю, подходят и к видеопроигрывателю. Но у него есть своих дополнительных атрибутов.</p>
+
+							<p><b>Дополнительные атрибуты видеопроигрывателя:</b></p>
+							<p><b>width</b> - указывает ширину для видео в пикселях или процентах.</p>
+							<p><b>height</b> - указывает высоту для видео в пикселях или процентах.</p>
+							<p><b>poster</b> - вставляет постер (картинку-заставку) в видео, которое отображается до воспроизведения.</p>
+						<div class="important">
+							<p>Помните, что пропорции постера и видео должны соответствовать иначе постер будет отображаться не пропорционально и не красиво, будет искажаться</p>
+						</div>
+							<p>Тег<span class="tag">&lt;source&gt;</span> - указывает путь к файлу который необходимо проиграть. Ниже рассмотрим атрибуты этого тега.</p>
+						<ul>
+							<li><i>type</i> - указывает тип воспроизводимого файла.</li>
+							<li><i>src</i> - задает путь к файлу</li>
+							<li><i>media</i> - для какого устройства должен производиться этот файл.</li>
+						</ul>
+							<p><b>Значения атрибута media:</b></p>
+						<ul>
+							<li><i>all</i> - для всех устройств.</li>
+							<li><i>handheld</i> - для смартфонов, телефонов, планшетов и тд</li>
+							<li><i>screen</i> - для экранов монитора </li>
+							<li><i>speech</i> - для речевых синтезаторов</li>
+							<li><i>projection</i> - для проекторов</li>
+							<li><i>tv</i> - для телеков</li>
+							<li><i>tty</i> - телетайпы</li>
+							<li><i>print</i> - для печати</li>
+						</ul>
+						
+						<p>Также воспроизведение видео задается через тег <span class="tag">&lt;iframe &gt;</span> :</p>
+							<p><b>Пример использования:</b></p>
+							<p class="code">&lt;iframe&gt;&lt; src='путь к видео' width="560" height="315" frameborder="0" allowfullscreen &gt;&lt;/iframe&gt;</p>
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/STHoCBfyXE8" frameborder="0" allowfullscreen></iframe>
 					</div>
+				</section>
+
+				<section>
 					<div class="day">
-						<h2 id="d4">День 4</h2>
+						<h2 id="d4">День 4. Формы</h2>
+						<p>Формы задаются при помощи тега <span class="tag">&lt;form&gt;</span>, который является парным. Содержимое формы на 99% состоит из тегов <span class="tag">&lt;input&gt;</span> различного типа. Этот тег является одиночным.</p>
+						<div class="code">
+							&lt;form action="#" accept-charset="utf-8" method="post" name="test"&gt; <br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="name"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="mail"&gt;<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input name="text"&gt;<br>
+							&lt;/form&gt;
+						</div>
+						<h3>Атрибуты форм:</h3>
+						<ul>
+							<li><i>action</i> - указывает на адрес программы или файла обработчика.</li>
+							<li><i>accept</i> - устанавливает фильтр на типы файлов, которые вы можете отправить через поле загрузки файлов.</li>
+							<li><i>accept-charset</i> - устанавливает кодировку для отправленных данных.</li>
+							<li><i>autocomplete</i> - включает/выключает (on/off)автозаполнение форм (по умолчанию стоит - on). </li>
+							<li><i>accesskey</i> - Переход к элементу с помощью комбинации клавиш.</li>
+							<li><i>align</i> - Определяет выравнивание изображения.</li>
+							<li><i>alt</i> - Альтернативный текст для кнопки с изображением.</li>
+							<li><i>autocomplete</i> - Включает или отключает автозаполнение.</li>
+							<li><i>autofocus</i> - Устанавливает фокус в поле формы. </li>
+							<li><i>border</i> - Толщина рамки вокруг изображения.</li>
+							<li><i>checked</i> - Предварительно активированный переключатель или флажок.</li>
+							<li><i>disabled</i> - Блокирует доступ и изменение элемента.</li>
+							<li><i>enctype</i> - указывает способ кодировки отправленных данных.</li>
+							<li><i>form</i> - Связывает поле с формой по её идентификатору.</li>
+							<li><i>formaction</i> - Определяет адрес обработчика формы.</li>
+							<li><i>formenctype</i> - Устанавливает способ кодирования данных формы при их отправке на сервер.</li>
+							<li><i>formmethod</i> - Сообщает браузеру каким методом следует передавать данные формы на сервер.</li>
+							<li><i>formnovalidate</i> - Отменяет встроенную проверку данных на корректность.</li>
+							<li><i>formtarget</i> - Определяет окно или фрейм в которое будет загружаться результат, возвращаемый обработчиком формы.</li>
+							<li><i>list</i> - Указывает на список вариантов, которые можно выбирать при вводе текста.</li>
+							<li><i>max</i> - Верхнее значение для ввода числа или даты.</li>
+							<li><i>maxlength</i> - Максимальное количество символов разрешенных в тексте.</li>
+							<li><i>method</i> - имеет два значения (get или post). Указывает как передавать данные.</li>
+							<li><i>min</i> - Нижнее значение для ввода числа или даты.</li>
+							<li><i>multiple</i> - Позволяет загрузить несколько файлов одновременно.</li>
+							<li><i>name</i> - Имя поля, предназначено для того, чтобы обработчик формы мог его идентифицировать. Задает уникальное имя для формы.</li>
+							<li><i>novalidate</i> - отменяет проверку на правильность заполнения полей форм.</li>
+							<li><i>pattern</i> - Устанавливает шаблон ввода.</li>
+							<li><i>placeholder</i> - выводит текст внутри поля формы, который исчезает при получении фокуса.</li>
+							<li><i>readonly</i> - Устанавливает, что поле не может изменяться пользователем.</li>
+							<li><i>required</i> - Обязательное для заполнения поле.</li>
+							<li><i>size</i> - Ширина текстового поля.</li>
+							<li><i>src</i> - Адрес графического файла для поля с изображением.</li>
+							<li><i>step</i> - Шаг приращения для числовых полей.</li>
+							<li><i>target</i> - указывает каким образом будет отображен результат выполнения формы.</li>
+							<li><i>tabindex</i> - Определяет порядок перехода между элементами с помощью клавиши Tab.</li>
+							<li><i>type</i> - Сообщает браузеру, к какому типу относится элемент формы.</li>
+							<li><i>value</i> - Значение элемента.</li>
+
+						</ul>
+						<div class="important">
+							Помните что имя формы и имена ее элементов должны быть уникальными. Имена задаются произвольно, они могут состоять только из латинских букв, цифр и дефисов.
+						</div>
+						<p>Почти все элементы формы задаются через тег &lt;input&gt;, и без этого тега форма работать не сможет.</p>
+						<div class="important">У тега input обязательно должны присутствовать 2 атрибута: name и type.</div>
+						<h3>Пример простой формы.</h3>
+						<form>
+							<input type="text" name="name" placeholder="Имя" > <br>
+							<input type="text" name="name" value="Ваше имя" > <br>
+							<input type="text" name="name" placeholder="Email" > <br>
+							<input type="text" name="e-mail" value="Ваш email"> <br>
+							<input type="submit" name="btn" value="Push me">
+						</form>
 					</div>
+				</section>
+				
+				<section>
 					<div class="day">
-						<h2 id="d5">День 5</h2>
+						<h2 id="d5">День 5. Тег input</h2>
+						<p>B HTML5 появилось множество новых полей. Некоторые новые поля еще не корректно работают в браузерах.</p>
+						<h3>Новые значения атрибута TYPE в HTML5</h3>
+						<ul>
+							<li><i>color</i> - поле для ввода цвета.</li>
+							<li><i>email</i> - указывает что в поле должен быть введен адрес эл.почты.</li>
+							<li><i>number</i> - числовое поле.</li>
+							<li><i>date</i> - указывает что в этом поле содержиться дата.</li>
+							<li><i>month</i> - указывает месяц</li>
+							<li><i>week</i> - указывает неделю</li>
+							<li><i>datetime</i> - указывает дату и время</li>
+							<li><i>datetime-local</i> - указывает местное время и дату</li>
+							<li><i>time</i> - указывает время.</li>
+							<li><i>url</i> - для ввода адрестной строки</li>
+							<li><i>tel</i> - поле для телефона.</li>
+							<li><i>search</i> - поле для поиска информации.</li>
+							<li><i>range</i> - задает ползунок.</li>
+						</ul>
+						<h3>Пример формы:</h3>
+						<form>
+							<p><b>Форма для заказа киллера</b></p>
+							<span>Укажите имя:</span> <input type="text" name="name" > <br>
+							<span>Укажите почту:</span> <input type="email" name="e-mail" > <br>
+							<span>Выберите дату:</span> <input type="date" name="date" > <br>
+							<span>Сколько лет?:</span> <input type="number" name="number" > <br>
+							<input type="range" name="range" > <br>
+							<span>Ваш контакт:</span> <input type="url" name="url" > <br>
+							<span>Ваш телефон:</span> <input type="tel" name="tel" > <br>
+							<span>Где искать?:</span> <input type="search" name="search" > <br>
+							<span>Выберите цвет глаз:</span> <input type="color" name="color" > <br>
+							<span></span> <input type="submit" name="knop" value="push меня">
+						</form>
+						<p>Будьте внимательны, тк не все типы полей поддерживаются современными браузерами. Обычно если поле не поддерживается оно обраватывается браузером как обычное текстовое поле. </p>
+						<div class="fishka">Поля email,number, range, search, tel, url уже поддерживэтиаются всеми современными браузерами и уже можно использовать эти типы не беспокоясь за работоспособность.</div>
 					</div>
 				</section>
 			</article>	
 		</div>
-
+	</div>
 
 
 <footer>
@@ -106,7 +327,6 @@
 			</div>
 		</div>
 </footer>
-		
 
 
 </body>
