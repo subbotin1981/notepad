@@ -40,7 +40,7 @@
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="about.html">Об авторе</a></li>
 					<li><a href="#">Полезные ресурсы</a></li>
-					<li><a href="#">Связаться со мной</a></li>
+					<li><a href="mail.html">Связаться со мной</a></li>
 					<div class="clear"></div>
 
 				</ul>
@@ -72,38 +72,46 @@
 					<div class="day">
 						<h2 style="margin-bottom: 30px; "> Отправить мне письмо.</h2>
 						
-						<form action="mail.php" class="svyaz" >
-							<div >
-								<p style="border-bottom: 1px dashed; color:#431EEA;"> <b><i style="color:#0B5A7B">Форма обратной связи</i></b></p>
+						<form action="mail.php" method="post" class="mailme" >
+							<div>
+								<p style="border-bottom: 1px dashed; color:#431EEA;">
+								 <b><i style="color:#0B5A7B">Форма обратной связи</i></b></p>
 							</div>
+							
 							<label>
 								<span>Введите ваше имя:</span>
-								<input type="text" name="name" placeholder="введите имя" required>
-							</label>
-							<label>
-								<span>Введите ваш e-mail:</span>
-								<input type="email" name="email" placeholder="введите e-mail" required>
+								<input type="text"  name="name" value="$name" placeholder="Введите имя" required>
 							</label>
 							
 							<label>
-								<span>Напишите тему:</span>
-								<input type="text" name="theme" placeholder="тема письма" required>
+								<span>Введите ваш e-mail:</span>
+								<input type="email" name="email" value="$email" placeholder="Введите e-mail" required>
 							</label>
 							<label>
-								<span>Оставьте сообщение:</span>
-								<textarea placeholder="введите сообщение" name="text" required></textarea>
-							</label>	
-
-							<label >	
-
-								<input   type="reset" name="reset" value="Очистить форму" >	
-							</label>	
-
-							<label style="text-align:right; ">									
-								<input  type="submit" name="send" value="Отправить письмо">	
+								<span>Ваш телефон</span>
+								<input type="tel" name="phone" value="$phone" placeholder="Ваш номер" required>
 							</label>
 
+							<!--<label>-->
+								<!--<span>Напишите тему:</span>-->
+								<!--<input type="text" name="theme" placeholder="Тема письма" required>-->
+							<!--</label>-->
+							
+							<label>
+								<span>Оставьте сообщение:</span>
+								<textarea placeholder="Введите сообщение" name="mess" required></textarea>
+							</label>	
+							
+								<label>	
+									<input type="reset" name="reset" value="Очистить форму" >	
+								</label>	
+
+								<label style="text-align:right; ">									
+									<input type="submit" name="send" value="Отправить письмо">	
+								</label>
+
 						</form>
+
 
 					</div>
 				</section>

@@ -198,3 +198,91 @@ h3{
 .mistake{
 	color: red;
 }
+
+.mailme{
+	background: #EFF4F2 url('../img/bg.png');
+	padding: 10px 20px; 
+	border: 2px groove #efefef;
+	width: 400px;
+	margin: 0 auto;
+	font-size:16px;
+	font-family: 'Cuprum', sans-serif;
+
+}
+.mailme lable{
+	margin: 0 0 20px 0;
+	display: block;
+}
+
+.mailme span{
+	display: inline-block; 
+	width: 180px; 
+	cursor: pointer; 
+	font-size: 15px;
+	font-family: 'Cuprum', sans-serif , color: #665555;
+}
+
+.mailme input{
+	width: 200px; 
+	padding: 5px 0 5px 5px; 
+	margin: 0; 
+	line-height: 16px; 
+	border: 1px solid #E8E7D6; 
+	outline: none; 
+	font-size: 12px; 
+	color: #084068;
+
+}
+.mailme textarea{
+	border: 1px solid #E8E7D6; 
+	padding: 15px 0 0 5px; 
+	min-width: 200px;
+	font-family: 'Cuprum', sans-serif;
+
+}
+.mailme input[type='reset'] {
+	background: #6A8EE1 url('../img/bg.png'); 
+	color: #000;  
+	padding: 2px 5px; 
+	width:185px; 
+	height: 25px;
+	border: 1px solid; 
+	border-radius: 5px; 
+	cursor: pointer;
+	margin: 1px 10px 10px 0 ;
+	float: left;
+	font-size: 13px;
+}
+.mailme input[type='submit'] {
+	background: #6A8EE1 url('../img/bg.png');
+	color: #000;  
+	padding: 2px 5px; 
+	width:185px;
+	height: 25px;
+	border: 1px solid; 
+	border-radius: 5px; 
+	cursor: pointer; 
+	margin: 0 ; 
+	font-size: 13px;
+}
+/*figure*/
+
+figure {
+	margin:0;
+	background: #5880F3;
+	padding: 10px;
+}
+figcaption {
+	margin: 10px 0 0 0;
+	font-style: italic;
+	text-align: center;
+}
+.k1 {
+	float: left;
+}
+.k2, .k3 {
+	float: right;
+}
+.k2 {
+	margin: 0 0 10px 0;
+}
