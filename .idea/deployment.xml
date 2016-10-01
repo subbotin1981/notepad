@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="subbotin.com.ua - NOTEPAD">
+    <serverData>
+      <paths name="karita.com.ua">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/karita.com.ua/www" local="$PROJECT_DIR$/../karita_last_ver" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="subbotin.com.ua - NOTEPAD">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/subbotin.com.ua/www" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="verhoglyad.com">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/verhoglyad.com/www" local="$PROJECT_DIR$/../verhoglyad_final" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

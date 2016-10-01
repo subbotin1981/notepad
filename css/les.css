@@ -404,9 +404,44 @@ p.relax::before{
     top:10px;
 }
 p.relax::after{
-    content: url("/img/beach_chair.png"');
+    content: url("/img/beach_chair.png");
     display: block;
     position: absolute;
     right: 15px;
     bottom:10px;
+}
+ul.pk li:first-child{
+    font-style: italic;
+}
+ul.pk li:last-child{
+    font-style: italic;
+    color: red;
+}
+ul.pk li:nth-child(3){
+    font-style: italic;
+    font-weight: bold;
+}
+ul.pk li:nth-of-type(1){
+    color:red;
+}
+ul.pk li:nth-last-of-type(1){
+    color: red;
+}
+p.pk em:nth-of-type(2){
+    color: red;
+}
+p.pk em:nth-child(2){
+    color: blue;
+}
+p.pk2 b:only-child{
+    color: red;
+}
+p.pk2 b:only-of-type{
+    color: red;
+}
+
+p.pk2 span:empty{
+    background: red;
+    display: inline-block;
+
 }

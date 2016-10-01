@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="dab13349-d088-48f5-886c-b40c2b23a948" name="subbotin.com.ua - NOTEPAD" url="http://subbot02.ftp.ukraine.com.ua">
+        <fileTransfer host="subbot02.ftp.ukraine.com.ua" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d191a403-d150-4157-8109-9b3f461fe156" name="verhoglyad.com" url="http://subbot02.ftp.ukraine.com.ua">
+        <fileTransfer host="subbot02.ftp.ukraine.com.ua" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="7cb06be7-30f8-4390-b5fa-fb4cea36315e" name="karita.com.ua" url="http://karita.ftp.ukraine.com.ua">
+        <fileTransfer host="karita.ftp.ukraine.com.ua" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

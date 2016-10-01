@@ -119,13 +119,24 @@ h3{
 	font-size: 18px;
 	padding: 16px 0 16px 40px;
 	border-bottom: 1px solid #999;
-	background: #efefef;
+	/*background: #efefef;*/
 }
 .widget ul li a:hover{
 		background: #ddd;
 }
 .widget ul li a.noborder{
 	border-bottom: none;
+}
+
+/*.widget ul li a:nth-child(odd){*/
+	/*background: #555555;*/
+/*}*/
+
+.widget ul li:nth-child(odd){
+	background: #fefefe;
+}
+.widget ul li:nth-child(even){
+	background: #efefef;
 }
 
 .content{
