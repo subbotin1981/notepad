@@ -128,4 +128,26 @@ form.forms textarea{
 	padding-left:5px;
 }
 
+#progressbar{
+	background: #9eda03;
+	color: #11969d;
+	border: none;
+	width: 250px;
+	height: 8px;
+}
+#progressbar::-webkit-progress-bar{
+	background: #9eda03;}
+#progressbar::-webkit-progress-value{
+	background: #11969d;
+}
+#progressbar::-moz-progress-bar{
+	background: #11969d;
+}
+summary{
+	cursor: pointer;
+}
+p.testpe:after{
+	content:"И точка";
+	color: red;
+}
 

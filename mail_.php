@@ -21,7 +21,7 @@
 		$to = "subbotin1981@gmail.com";
 		$charset = "utf-8";
 //		$subject = "Тема";
-		$message = "Имя: $name. \ne-mail: $email. \nТелефон: $phone. \nСообщение: $mess.";
+		$message = "Имя: $name. \n e-mail: $email. \n Телефон: $phone. \n Сообщение: $mess.";
 		$from = "$email";
 //		$headers  = "MIME-Version: 1.0";
 		$headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
