@@ -5,7 +5,7 @@
       <webServer id="dab13349-d088-48f5-886c-b40c2b23a948" name="subbotin.com.ua - NOTEPAD" url="http://subbot02.ftp.ukraine.com.ua">
         <fileTransfer host="subbot02.ftp.ukraine.com.ua" port="21">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>

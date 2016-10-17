@@ -36,6 +36,11 @@ h2{
 	padding: 18px 20px 18px 10px;
 	margin: -20px 0 0 -10px;
 	width: 100%;
+	text-shadow: 1px 1px 5px #B5C8DC;
+}
+h2:target{
+	color: #fefefe;
+	background: #a80000;
 }
 h3{
 	border-bottom: 1px dashed #555;
@@ -159,6 +164,7 @@ h3{
 	background: #fff url('../img/fhead.png') repeat-y -110px 0;
 	padding: 20px;
 	margin: 40px 0;
+	box-shadow: 3px 2px 6px #E3F5FA;
 }
 
 
@@ -167,7 +173,7 @@ h3{
 	font-weight: bold;
 }
 .style{
-	color: #295717;
+	color: #29cb18;
 	font-style: italic;
 }
 /* Доп стили */

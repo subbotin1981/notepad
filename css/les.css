@@ -443,5 +443,216 @@ p.pk2 b:only-of-type{
 p.pk2 span:empty{
     background: red;
     display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+p.pk2 ins:not([title]){
+    color: red;}
 
+div.texo{
+    background: #ffd680;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+div.wb{
+    background: #ffd680;
+    width: 200px;
+    text-overflow: clip;
+    word-break: break-all;
+}
+div.img1 {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    max-width: 280px;
+    margin:10px;
+
+}
+div.img1::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 10px 10px #78B5DC inset;
+    content: "";
+}
+div.img1>img {
+    vertical-align: top;
+    width: 100%;
+}
+
+div.img2 {background: url('/img/k3.jpg'); width: 280px; height: 200px; box-shadow: 0 0 25px #000 inset; margin: 10px;}
+
+.bgtest{
+    height: 200px;
+    border:1px solid #ccc;
+    margin: 30px;
+    background-image: url(/img/color.png),url(/img/checkbox.png);
+    background-repeat:no-repeat;
+    background-position: left, right;
+    background-color: #efefef;
+    background-size: contain,cover;
+}
+.home_bgd {
+    height: 120px;
+    width:120px;
+    border: 15px  dashed #C13F3F;
+    margin: 20px;
+    padding: 17px;
+    background:
+            url(/img/checkbox.png) no-repeat center center,
+            url(/img/fhead.png) no-repeat left top,
+            url(/img/fbody.png) no-repeat right top,
+            url(/img/fhead.png) no-repeat right bottom,
+            url(/img/fbody.png) no-repeat left bottom;
+    background-color: #29cb18;
+    background-size: 30px 30px, 60px,60px,60px,60px;
+    background-origin: content-box;
+    background-clip: border-box;
+    border-radius: 10px;
+}
+div.grad{
+    height: 100px;
+    border:1px solid #ccc;
+    background-image: linear-gradient(#fff, #000);
+}
+div.grad2{
+     height: 100px;
+     border:1px solid #ccc;
+     background-image: linear-gradient(45deg, #fff, #000);
+}
+div.grad3{
+    height: 100px;
+    border:1px solid #ccc;
+    background-image: linear-gradient(135deg, #29cb18, #8ca3d2, #ff0000);
+}
+div.grad3_1{
+    height: 100px;
+    border:1px solid #ccc;
+    background-image: linear-gradient(135deg,#29cb18 0%, #29cb18 33%, #fcfdf8 33%, #fcfdf8 66%, #ff0000 66%, #ff0000 100%);
+}
+div.grad4{
+    height: 100px;
+    background-color: #ddd;
+    background-image: linear-gradient(45deg, #fff, #000);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: 25px 25px;
+}
+div.grad5{
+    height: 100px;
+    background-image: linear-gradient(135deg, #eee, #ccc 47%, #222 47%, transparent 50%);
+    background-color: #444;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+}
+div.grad6{
+    height: 100px;
+    background: linear-gradient(135deg, #eee, #ccc 25%,  transparent 25%) 25px 25px,
+    linear-gradient(225deg, #eee, #ccc 25%,  transparent 25%) -25px 25px,
+    linear-gradient(315deg, #eee, #ccc 25%,  transparent 25%) -25px -25px,
+    linear-gradient(45deg, #eee, #ccc 25%,  transparent 25%) 25px -25px;
+    background-color: #444;
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+.home_grad1 {height: 100px;
+    background:
+            linear-gradient(90deg, #EEA95E 20%, #EAF124 20%, #EAF124 40%, #48EB1C 40%,#48EB1C 60%, #1C97D7 60%, #1C97D7 80%, #ED1BC8 80%, #ED1BC8 100%) no-repeat 0 15px;
+    background-color: #6e6e6e;
+    background-size: 100% 70px;
+}
+
+div.home_grad2 {
+    height: 100px;
+    background:
+            linear-gradient( #EF8613, #E7AB6B, #EF8613) no-repeat -490px 15px,
+            linear-gradient( #D8B305, #DAC874, #D8B305) no-repeat -370px 15px,
+            linear-gradient( #05D814, #7FDE8F, #05D814) no-repeat -250px 15px,
+            linear-gradient( #0554D8, #7F8CDE, #0554D8) no-repeat -120px 15px,
+            linear-gradient( #D805CC, #E6AFE8, #D805CC) no-repeat 0 15px,
+            linear-gradient(90deg, #eee 50%, #444 50%) repeat-x center 4px,
+            linear-gradient(90deg, #eee 50%, #444 50%) repeat-x center 91px;
+    background-color: #444;
+    background-size:  100% 70px, 100% 70px, 100% 70px, 100% 70px, 100% 70px, 20px 5px, 20px 5px ;
+}
+.rgrad1{
+    height: 100px;
+    border:1px solid #333;
+    background-color: #444;
+    background: radial-gradient(#fff,#444);
+}
+.rgrad2{
+    height: 100px;
+    width: 100px;
+    border:1px solid #333;
+    background-color: #444;
+    background: radial-gradient(#fff,#444);
+
+}
+
+.rgrad3 {
+    height: 100px;
+    border: 1px solid #333;
+    background-color: #444;
+    background: radial-gradient(circle at left top, #fff, #444);
+}
+.rgrad3_1 {
+    height: 100px;
+    border: 1px solid #333;
+    background-color: #444;
+    background: radial-gradient(circle, #fff, #444)left top;
+}
+.rgrad4{
+    height: 100px;
+    border: 1px solid #333;
+    background: radial-gradient(circle farthest-side at 250px 50px, #fff, #444)left top;
+}
+.rgrad4_1{
+    height: 100px;
+    border: 1px solid #333;
+    background: radial-gradient(circle farthest-corner at 250px 0, #fff, #444)left top;
+}
+.rgrad4_2{
+    height: 100px;
+    border: 1px solid #333;
+    background: radial-gradient(circle closest-corner at 250px 0, #fff, #444)left top;
+}
+
+.rgrad5{
+    height: 100px;
+    border: 1px solid #333;
+    background: radial-gradient(#fff, #444) center;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-color: #444;
+}
+
+.svetofor {
+    height: 302px;
+    width: 100px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #000;
+    background:
+            radial-gradient(#F00 40%, #333 70%),
+            radial-gradient( #FFDD00 40%,#333 70%) 0 99px,
+            radial-gradient( #0f0 40%,#333 70%) 0 198px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-color: #333;
+}
+.svet {
+    height: 470px;
+    width: 150px;
+    border: 7px solid #777;
+    border-radius: 80px;
+    background:
+            linear-gradient( 45deg, transparent 5px, #555 5px, #555 6px, transparent 6px),
+            linear-gradient(135deg, transparent 5px, #333 5px, #333 6px, transparent 6px);
+    background-size: 14px 14px, 14px 14px;
+    background-color: #444;
 }
